@@ -1,0 +1,16 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory `c:/Users/sacha/Desktop/__pycache__/t/tendos-limine'
+echo CC common/string.o
+gcc -std=c11 -ffreestanding -fno-stack-protector -fno-stack-check -fno-lto -fno-pie -fno-pic -m64 -march=x86-64 -mabi=sysv -mno-80387 -mno-mmx -mno-sse -mno-sse2 -mno-red-zone -mcmodel=kernel -MMD -I include -g  -c common/string.c -o common/string.o
+echo CC drivers/limine_interface.o
+gcc -std=c11 -ffreestanding -fno-stack-protector -fno-stack-check -fno-lto -fno-pie -fno-pic -m64 -march=x86-64 -mabi=sysv -mno-80387 -mno-mmx -mno-sse -mno-sse2 -mno-red-zone -mcmodel=kernel -MMD -I include -g  -c drivers/limine_interface.c -o drivers/limine_interface.o
+echo CC drivers/tty.o
+gcc -std=c11 -ffreestanding -fno-stack-protector -fno-stack-check -fno-lto -fno-pie -fno-pic -m64 -march=x86-64 -mabi=sysv -mno-80387 -mno-mmx -mno-sse -mno-sse2 -mno-red-zone -mcmodel=kernel -MMD -I include -g  -c drivers/tty.c -o drivers/tty.o
+echo CC kernel/kernel.o
+gcc -std=c11 -ffreestanding -fno-stack-protector -fno-stack-check -fno-lto -fno-pie -fno-pic -m64 -march=x86-64 -mabi=sysv -mno-80387 -mno-mmx -mno-sse -mno-sse2 -mno-red-zone -mcmodel=kernel -MMD -I include -g  -c kernel/kernel.c -o kernel/kernel.o
+echo LD out.kern
+ld common/string.o drivers/limine_interface.o drivers/tty.o kernel/kernel.o -nostdlib -static -m elf_x86_64 -z max-page-size=0x1000 -T kernel/link.ld -o out.kern
+make.exe: Leaving directory `c:/Users/sacha/Desktop/__pycache__/t/tendos-limine'
+ 
+process_begin: CreateProcess(NULL, "", ...) failed.
+

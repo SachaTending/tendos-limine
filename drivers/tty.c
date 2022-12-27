@@ -154,20 +154,17 @@ void print_char(const char *string)
     terminal_request.response->write(terminal, "a", 1);
 }
 
-void test()
+void test(const char * s, ...)
 {
-    char *buf;
+    char *buf[strlen(s)];
     sprintf(buf, "ok, test");
     //for (;;);
     struct limine_terminal *terminal = terminal_request.response->terminals[0];
-    terminal_request.response->write(terminal, (const char *) buf, strlen("ok, test"));
-    for (;;);
+    terminal_request.response->write(terminal, (const char *) buf, strlen(buf));
 }
 
 void printf(const char * s, ...) {
-    test();
-    for (;;);
-    va_list ap;
+    test(s);
     //print_char("a");
     //for (;;);
     //va_start(ap, s);

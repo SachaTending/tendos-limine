@@ -1,0 +1,466 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-pc-mingw32
+ 
+���⥬� �� 㤠���� ���� 㪠����� ����.
+
+
+# ���� ������ Make, ���������� Tue Dec 27 15:36:02 2022
+
+# ����������
+
+# ��������������
+<D = $(patsubst %/,%,$(dir $<))
+# ��������������
+?F = $(notdir $?)
+# ���������� � �����
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# ��������� `override' (from `makefile', line 43)
+QEMU = qemu-system-x86_64
+# Make-����
+MAKEFLAGS = Rrqp
+# ���������� � �����
+PHOENIXPATH = C:\Users\sacha\Downloads\PhoenixSuit_V1.10\
+# ��������������
+?D = $(patsubst %/,%,$(dir $?))
+# ��������������
+@D = $(patsubst %/,%,$(dir $@))
+# ���������� � �����
+H 
+OMEDRIVE = C:
+# ��������������
+@F = $(notdir $@)
+# ��������������
+^D = $(patsubst %/,%,$(dir $^))
+# Make-����
+CURDIR := c:/Users/sacha/Desktop/__pycache__/t/tendos-limine
+# �� ���������
+SHELL := sh.exe
+# ���������� � �����
+WINDIR = C:\Windows
+# ���������� � �����
+VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"b45db535c3aee3bd3b042247384b1d40.ru","_translationsConfigFile":"H:\\-\\SASHA_WIN10_APPDATA\\Code\\clp\\b45db535c3aee3bd3b042247384b1d40.ru\\tcf.json","_cacheRoot":"H:\\-\\SASHA_WIN10_APPDATA\\Code\\clp\\b45db535c3aee3bd3b042247384b1d40.ru","_resolvedLanguagePackCoreLocation":"H:\\-\\SASHA_WIN10_APPDATA\\Code\\clp\\b45db535c3aee3bd3b042247384b1d40.ru\\e8a3071ea4344d9d48ef8a4df2c097372b0c5161","_corruptedFile":"H:\\-\\SASHA_WIN10_APPDATA\\Code\\clp\\b45db535c3aee3bd3b042247384b1d40.ru\\corrupted.info","_languagePackSupport":true}
+# ���������� � �����
+VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
+# Make-���� (from `makefile', line 47)
+KERNEL = out.kern
+# ���������� � �����
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.wlua;.lexe
+# Make-���� (from `target/kernel.target', line 1)
+MAKEFILE_LIST :=  makefile target/common.target target/drivers.target target/kernel.target
+# ���������� � �����
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# ���������� � �����
+TMP = H:\tmp
+# ��������� `override' (from `makefile', line 4)
+AS = nasm
+# ���������� � �����
+PROGRAMW6432 = C:\Program Files
+# ���������� � �����
+PROGRAMDATA = C:\ProgramData
+# ���������� � �����
+VSCODE_CWD = C:\Users\sacha\Desktop\__pycache__
+# ���������� � �����
+PATH = C:\Program Files\Eclipse Adoptium\jdk-8.0.322.6-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\java\jdk-17.0.1\bin;C:\Program Files\qemu;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\gnuwin;C:\gnuwin\bin;C:\Users\sacha\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\sacha\AppData\Local\Programs\Python\Python310\;C:\Users\sacha\AppData\Local\Microsoft\WindowsApps;C:\Users\sacha\Downloads\PhoenixSuit_V1.10\;C:\Users\sacha\AppData\Roaming\npm;C:\adb;C:\Program Files\dotnet\;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Gradle\bin;C:\MinGW\bin;C:\mvn\bin;C:\Program Files\CMake\bin;C:\Program Files (x86)\WinSCP\;C:\Program Files (x86)\Lua\5.1;C:\Program Files (x86)\Lua\5.1\clibs;D:\tcc;C:\Program Files (x86)\Bitvise SSH Client;C:\ProgramData\chocolatey\bin;C:\Users\sacha\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\sacha\AppData\Local\Programs\Python\Python310\;C:\Users\sacha\AppData\Local\Microsoft\WindowsApps;C:\Program Files\qemu;C:\Users\sacha\Downloads\PhoenixSuit_V1.10\;C:\Users\sacha\AppData\Roaming\npm;C:\Program Files\heroku\bin;C:\Program Files (x86)\Nmap;H:\Android\net45\resources\bin;H:\Hyper\resources\bin;H:\Microsoft VS Code\bin;H:\-\i386-elf\bin;C:\Users\sacha\.dotnet\tools;C:\tools\msys64;
+# ��������� `override' (from `makefile', line 3)
+LD = ld
+# ���������� � �����
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# ���������� � �����
+CHOCOLATEYLASTPATHUPDATE = 133162188811290760
+# ���������� � �����
+PROCESSOR_ARCHITECTURE = x86
+# ���������� � �����
+USERPROFILE = C:\Users\sacha
+# ���������� � �����
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# ���������� � �����
+ALLUSERSPROFILE = C:\ProgramData
+# ���������� � �����
+NUMBER_OF_PROCESSORS = 4
+# ���������� � �����
+ELECTRON_RUN_AS_NODE = 1
+# ��������� `override' (from `makefile', line 29)
+LDFLAGS = -nostdlib -static -m elf_x86_64 -z max-page-size=0x1000 -T kernel/link.ld
+# �� ���������
+.FEATURES := target-specific order-only second-expansion else-if archives
+# ��������������
+%F = $(notdir $%)
+# ��������� `override' (from `makefile', line 40)
+NASMFLAGS = -f elf64
+# ���������� � �����
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\LOCAL\crashpad_9060_MRZERVSUMYODXCDF
+# ���������� � �����
+COMPUTERNAME = DESKTOP-PPA4CQA
+# ���������� � �����
+PROGRAMFILES = C:\Program Files (x86)
+# ���������� � �����
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# ���������� � �����
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# ���������� � �����
+USERNAME = sacha
+# ���������� � �����
+PUBLIC = C:\Users\Public
+# ���������� � �����
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# ���������� � �����
+CHOCOLATEYTOOLSLOCATION = C:\tools
+# ���������� � �����
+VSCODE_CLI = 1
+# ���������� � �����
+VSCODE_CODE_CACHE_PATH = H:\-\SASHA_WIN10_APPDATA\Code\CachedData\e8a3071ea4344d9d48ef8a4df2c097372b0c5161
+# ���������� � �����
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# ���������� � �����
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# ���������� � �����
+LOGONSERVER = \\DESKTOP-PPA4CQA
+# ���������� � �����
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# ���������� � �����
+USERDOMAIN = DESKTOP-PPA4CQA
+# ���������� � �����
+LUA_DEV = C:\Program Files (x86)\Lua\5.1
+# �� ���������
+MAKE = $(MAKE_COMMAND)
+# �� ���������
+MAKECMDGOALS := all
+# ��������� `override' (from `makefile', line 2)
+CC = gcc
+# ���������� � �����
+JAVA_HOME = C:\Program Files\Eclipse Adoptium\jdk-8.0.322.6-hotspot\
+# �� ���������
+MAKE_VERSION := 3.81
+# ��������� `override' (from `makefile', line 45)
+HEADER_DEPS := 
+# Make-����
+.DEFAULT_GOAL := build
+# ��������� `override' (from `makefile', line 8)
+CCFLAGS = -std=c11 -ffreestanding -fno-stack-protector -fno-stack-check -fno-lto -fno-pie -fno-pic -m64 -march=x86-64 -mabi=sysv -mno-80387 -mno-mmx -mno-sse -mno-sse2 -mno-red-zone -mcmodel=kernel -MMD -I include -g
+# ���������� � �����
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# ��������������
+%D = $(patsubst %/,%,$(dir $%))
+# ���������� � �����
+LOCALAPPDATA = C:\Users\sacha\AppData\Local
+# ���������� � �����
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files\dotnet;
+# �� ���������
+MAKE_COMMAND := make.exe
+# ���������� � �����
+PROCESSOR_ARCHITEW6432 = AMD64
+# �� ���������
+.VARIABLES := 
+# ��������������
+*F = $(notdir $*)
+# ���������� � �����
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 37 Stepping 2, GenuineIntel
+# ���������� � �����
+OS = Windows_NT
+# ���������� � �����
+VSCODE_IPC_HOOK = \\.\pipe\8ad2c6bcce8dc727df64163a0d3bd5a7-1.74.2-main-sock
+# ���������� � �����
+HOMEPATH = \Users\sacha
+# ���������� � �����
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# ���������� � �����
+PROMPT = $P$G
+# ���������� � �����
+MFLAGS = -Rrqp
+# ��������������
+*D = $(patsubst %/,%,$(dir $*))
+# ���������� � �����
+SYSTEMROOT = C:\Windows
+# ��������������
++D = $(patsubst %/,%,$(dir $+))
+# ��������������
++F = $(notdir $+)
+# ���������� � �����
+APPDATA = H:\-\SASHA_WIN10_APPDATA
+# ���������� � �����
+TEMP = H:\tmp
+# ���������� � �����
+COMSPEC = C:\Windows\system32\cmd.exe
+# �� ���������
+MAKEFILES := 
+# ��������������
+<F = $(notdir $<)
+# ���������� � �����
+LC_ALL = C
+# ���������� � �����
+LUA_PATH = ;;C:\Program Files (x86)\Lua\5.1\lua\?.luac
+# ��������������
+^F = $(notdir $^)
+# �� ���������
+SUFFIXES := 
+# ���������� � �����
+SYSTEMDRIVE = C:
+# ���������� � �����
+SESSIONNAME = Console
+# ���������� � �����
+PROCESSOR_REVISION = 2502
+# ���������� � �����
+MAKELEVEL := 0
+# ���������� � �����
+LANG = C
+# ���������� � �����
+PROCESSOR_LEVEL = 6
+# ���������� � �����
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# ���������� � �����
+VSCODE_PID = 9060
+# Make-���� (from `target/kernel.target', line 1)
+FILES = common/string.o drivers/limine_interface.o drivers/tty.o kernel/kernel.o
+# ���������� � �����
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-PPA4CQA
+# variable set hash-table stats:
+# Load=102/1024=10%, Rehash=0, Collisions=12/143=8%
+
+# Pattern-specific Variable Values
+
+# ��� �������� ���������� ��������� ��� �����
+
+# ��������
+
+# C:\Program Files\heroku\bin (���� C:/Program Files/heroku/bin, ����� ����������� 1649521869): 4 ������,��� ������������ �����.
+# H:\Android\net45\resources\bin (���� H:/Android/net45/resources/bin, ����� ����������� 1657970547): 6 ������,��� ������������ �����.
+# target (���� c:/Users/sacha/Desktop/__pycache__/t/tendos-limine/target, ����� ����������� 1672144501): 5 ������,��� ������������ �����.
+# C:\Program Files\java\jdk-17.0.1\bin (���� C:/Program Files/java/jdk-17.0.1/bin, ����� ����������� 1632764812): 123 ������,��� ������������ �����.
+# C:\Users\sacha\Downloads\PhoenixSuit_V1.10\: ���������� �������� �������� ������� stat.
+# C:\Program Files (x86)\Lua\5.1 (���� C:/Program Files (x86)/Lua/5.1, ����� ����������� 1666529458): 35 ������,��� ������������ �����.
+# C:\Program Files\qemu (���� C:/Program Files/qemu, ����� ����������� 1671275580): 104 ������,��� ������������ �����.
+# C:\Program Files (x86)\Bitvise SSH Client (���� C:/Program Files (x86)/Bitvise SSH Client, ����� ����������� 1671317938): 49 ������,��� ������������ �����.
+# C:\Windows\System32\WindowsPowerShell\v1.0\ (���� C:/Windows/System32/WindowsPowerShell/v1.0/, ����� ����������� 1633527205): 31 ������,��� ������������ �����.
+# C:\Windows\System32\Wbem (���� C:/Windows/System32/Wbem, ����� ����������� 1654965758): 170 ������,��� ������������ �����.
+# . (���� c:/Users/sacha/Desktop/__pycache__/t/tendos-limine, ����� ����������� 1672144549): 15 ������,��� ������������ �����.
+# C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (���� C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, ����� ����������� 1641729389): 10 ������,��� ������������ �����.
+# C:\gnuwin\bin (���� C:/gnuwin/bin, ����� ����������� 1662816558): 93 ������,��� ������������ �����.
+# C:\ProgramData\chocolatey\bin (���� C:/ProgramData/chocolatey/bin, ����� ����������� 1671744449): 11 ������,��� ������������ �����.
+# C:\Program Files\nodejs\ (���� C:/Program Files/nodejs/, ����� ����������� 1643727959): 15 ������,��� ������������ �����.
+# C:\Program Files (x86)\Nmap (���� C:/Program Files (x86)/Nmap, ����� ����������� 1654937910): 37 ������,��� ������������ �����.
+# H:\Microsoft VS Code\bin (���� H:/Microsoft VS Code/bin, ����� ����������� 1671744252): 5 ������,��� ������������ �����.
+# C:\MinGW\bin (���� C:/MinGW/bin, ����� ����������� 1664564194): 2 ������,��� ������������ �����.
+# C:\Program Files (x86)\WinSCP\ (���� C:/Program Files (x86)/WinSCP/, ����� ����������� 1664024441): 14 ������,��� ������������ �����.
+# C:\Windows\System32\OpenSSH\: ���������� �������� �������� ������� stat.
+# C:\Program Files\PuTTY\ (���� C:/Program Files/PuTTY/, ����� ����������� 1642844181): 12 ������,��� ������������ �����.
+# C:\Program Files (x86)\Common Files\Oracle\Java\javapath (���� C:/Program Files (x86)/Common Files/Oracle/Java/javapath, ����� ����������� 1642526590): 5 ������,��� ������������ �����.
+# C:\mvn\bin (���� C:/mvn/bin, ����� ����������� 1654521398): 8 ������,��� ������������ �����.
+# C:\Program Files\Eclipse Adoptium\jdk-8.0.322.6-hotspot\bin (���� C:/Program Files/Eclipse Adoptium/jdk-8.0.322.6-hotspot/bin, ����� ����������� 1644509861): 53 ������,��� ������������ �����.
+# C:\Windows (���� C:/Windows, ����� ����������� 1669405852): 144 ������,��� ������������ �����.
+# H:\Hyper\resources\bin: ���������� �������� �������� ������� stat.
+# C:\Users\sacha\AppData\Local\Programs\Python\Python310\ (���� C:/Users/sacha/AppData/Local/Programs/Python/Python310/, ����� ����������� 1664019646): 24 ������,��� ������������ �����.
+# C:\Users\sacha\AppData\Local\Programs\Python\Python310\Scripts\ (���� C:/Users/sacha/AppData/Local/Programs/Python/Python310/Scripts/, ����� ����������� 1669411599): 161 ������,��� ������������ �����.
+# C:\tools\msys64 (���� C:/tools/msys64, ����� ����������� 1671745179): 39 ������,��� ������������ �����.
+# C:\Program Files\Cloudflare\Cloudflare WARP\ (���� C:/Program Files/Cloudflare/Cloudflare WARP/, ����� ����������� 1649484197): 11 ������,��� ������������ �����.
+# C:\gnuwin (���� C:/gnuwin, ����� ����������� 1670702700): 21 ������,��� ������������ �����.
+# C:\Program Files\dotnet\ (���� C:/Program Files/dotnet/, ����� ����������� 1668091859): 13 ������,��� ������������ �����.
+# C:\adb (���� C:/adb, ����� ����������� 1664564173): 6 ������,��� ������������ �����.
+# C:\Users\sacha\AppData\Roaming\npm: ���������� �������� �������� ������� stat.
+# C:\Users\sacha\.dotnet\tools: ���������� �������� �������� ������� stat.
+# H:\-\i386-elf\bin (���� H:/-/i386-elf/bin, ����� ����������� 1665091313): 40 ������,��� ������������ �����.
+# C:\Program Files\Git\cmd (���� C:/Program Files/Git/cmd, ����� ����������� 1642885392): 8 ������,��� ������������ �����.
+# C:\Windows\system32 (���� C:/Windows/system32, ����� ����������� 1671880486): 3128 ������,��� ������������ �����.
+# D:\tcc (���� D:/tcc, ����� ����������� 1670528004): 7 ������,��� ������������ �����.
+# C:\Program Files\CMake\bin (���� C:/Program Files/CMake/bin, ����� ����������� 1662815949): 7 ������,��� ������������ �����.
+# C:\Gradle\bin (���� C:/Gradle/bin, ����� ����������� 318200400): 4 ������,��� ������������ �����.
+# C:\Program Files (x86)\Lua\5.1\clibs (���� C:/Program Files (x86)/Lua/5.1/clibs, ����� ����������� 1666529437): 119 ������,��� ������������ �����.
+# C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (���� C:/Program Files/NVIDIA Corporation/NVIDIA NvD 
+LISR, ����� ����������� 1641729483): 5 ������,��� ������������ �����.
+# C:\Users\sacha\AppData\Local\Microsoft\WindowsApps (���� C:/Users/sacha/AppData/Local/Microsoft/WindowsApps, ����� ����������� 1671224112): 13 ������,��� ������������ �����.
+
+# 4557 ������,��� impossibilities in 44 directories.
+
+# Implicit Rules
+
+%.o: %.c
+#  �������, ������� ������� ���������  (�� `makefile', ������ 64):
+	@echo CC $@
+	@$(CC) $(CCFLAGS) $(CFLAGS) -c $< -o $@
+	
+
+%.o: %.S
+#  �������, ������� ������� ���������  (�� `makefile', ������ 68):
+	@echo AS $@
+	@$(CC) $(CCFLAGS) $(CFLAGS) -c $< -o $@
+	
+
+%.o: %.asm
+#  �������, ������� ������� ���������  (�� `makefile', ������ 72):
+	@echo NASM $@
+	@$(AS) $(NASMFLAGS) $< -o $@
+	
+
+# ������� ������: 3, ������������: 0 (0,0%).
+
+# �����
+
+# �� �������� �����:
+all:
+#  ����, ���������� �� ��������� ������.
+#  ������������ ����� ������� ������
+#  ���� �� ����������.
+#  ���� �� ��� ��������.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+.PHONY: clean cleanw
+#  ����� ������� ������ �� ������������.
+#  ����� ��������� �� ���� �� �����������.
+#  ���� �� ��� ��������.
+
+# �� �������� �����:
+.DEFAULT:
+#  ����� ������� ������ �� ������������.
+#  ����� ��������� �� ���� �� �����������.
+#  ���� �� ��� ��������.
+
+# �� �������� �����:
+target/kernel.target:
+#  ������������ ����� ������� ������
+#  ����� ���������� ��������� 2022-12-27 15:35:01
+#  ���� ��� ��������.
+#  ������� ���������.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# �� �������� �� 
+���:
+makefile:
+#  ������������ ����� ������� ������
+#  ����� ���������� ��������� 2022-12-27 15:35:01
+#  ���� ��� ��������.
+#  ������� ���������.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build: kern
+#  ����� ������� ������ �� ������������.
+#  ����� ��������� �� ���� �� �����������.
+#  ���� �� ��� ��������.
+
+# �� �������� �����:
+drivers/limine_interface.o:
+#  ����� ������� ������ �� ������������.
+#  ����� ��������� �� ���� �� �����������.
+#  ���� �� ��� ��������.
+
+cleanw:
+#  ���������� (����������� �� .PHONY).
+#  ����� ������� ������ �� ������������.
+#  ���� �� ����������.
+#  ���� �� ��� ��������.
+#  �������, ������� ������� ���������  (�� `makefile', ������ 86):
+	@echo DEL $(FILES) out.kern image.iso
+	@del $(FILES) out.kern image.iso
+	
+
+# �� �������� �����:
+kernel/kernel.o:
+#  ����� ������� ������ �� ������������.
+#  ����� ��������� �� ���� �� �����������.
+#  ���� �� ��� ��������.
+
+# �� �������� �����:
+common/string.o:
+#  ����� ������� ������ �� ������������.
+#  ����� ��������� �� ���� �� �����������.
+#  ���� �� ��� ��������.
+
+# �� �������� �����:
+target/common.target:
+#  ������������ ����� ������� ������
+#  ����� ���������� ��������� 2022-12-27 15:35:01
+#  ���� ��� ��������.
+#  ������� ���������.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# �� �������� �����:
+.SUFFIXES:
+#  ����� ������� ������ �� ������������.
+#  ����� ��������� �� ���� �� �����������.
+#  ���� �� ��� ��������.
+
+# �� �������� �����:
+drivers/tty.o:
+#  ����� ������� ������ �� ������������.
+#  ����� ��������� �� ���� �� �����������.
+#  ���� �� ��� ��������.
+
+run: iso
+#  ����� ������� ������ �� ������������.
+#  ����� ��������� �� ���� �� �����������.
+#  ���� �� ��� ��������.
+#  �������, ������� ������� ���������  (�� `makefile', ������ 76):
+	@echo QEMU -cdrom image.iso
+	@$(QEMU) -cdrom image.iso -serial stdio -m 512m
+	
+
+clean:
+#  ���������� (����������� �� .PHONY).
+#  ����� ������� ������ �� ������������.
+#  ���� �� ����������.
+#  ���� �� ��� ��������.
+#  �������, ������� ������� ���������  (�� `makefile', ������ 82):
+	@echo RM $(FILES) out.kern image.iso
+	@rm $(FILES) out.kern image.iso -f
+	
+
+# �� �������� �����:
+target/drivers.target:
+#  ������������ ����� ������� ������
+#  ����� ���������� ��������� 2022-12-27 15:35:01
+#  ���� ��� ��������.
+#  ������� ���������.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+kern: common/string.o drivers/limine_interface.o drivers/tty.o kernel/kernel.o
+#  ����� ������� ������ �� ������������.
+#  ����� ��������� �� ���� �� �����������.
+#  ���� �� ��� ��������.
+#  �������, ������� ������� ���������  (�� `makefile', ������ 58):
+	@echo LD $(KERNEL)
+	@$(LD) $(FILES) $(LDFLAGS) -o out.kern
+	
+
+iso: build
+#  ����� ������� ������ �� ������������.
+#  ����� ��������� �� ���� �� �����������.
+#  ���� �� ��� ��������.
+#  �������, ������� ������� ���������  (�� `makefile', ������ 90):
+	@echo CP limine/out.kern
+	@echo XORRISO image.iso
+	@cp out.kern limine/
+	@xorriso -as mkisofs -b limine-cd.bin \
+	-no-emul-boot -boot-load-size 4 -b 
+make.exe: *** ��� ������� ��� ������ ���� `all'.  �������.
+
+oot-info-table \
+	--efi-boot limine-cd-efi.bin \
+	-efi-boot-part --efi-boot-image --protective-msdos-label \
+	limine -o image.iso
+	
+
+# files hash-table stats:
+# Load=18/1024=2%, Rehash=0, Collisions=0/41=0%
+# ���� ������ VPATH
+
+# �� ��������� ���� ������ `vpath'.
+
+# �� ��������� ����� (���������� `VPATH') ���� ������.
+
+# # of strings in strcache: 4
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4023 / max = 4023 / min = 4023 / avg = 4023
+
+# ������ ���� ������ Make ��������� Tue Dec 27 15:36:02 2022
+
+ 
