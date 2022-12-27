@@ -13,12 +13,21 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Setup
+      run: sudo apt install xorriso
     - name: make
-      run: make
-    - name: Upload a Build Artifact
+      run: make iso
+    - name: Upload Kernel
       uses: actions/upload-artifact@v3.1.1
       with:
         # Artifact name
         name: Kernel(run using limine)
         # A file, directory or wildcard pattern that describes what to upload
         path: out.kern
+    - name: Upload Image
+      uses: actions/upload-artifact@v3.1.1
+      with:
+        # Artifact name
+        name: iso image(bios/csm and uefi bootable)
+        # A file, directory or wildcard pattern that describes what to upload
+        path: image.iso
