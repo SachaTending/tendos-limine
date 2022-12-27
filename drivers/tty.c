@@ -157,7 +157,7 @@ void print_char(const char *string)
 void test(const char * s, ...)
 {
     char *buf[strlen(s)];
-    sprintf(buf, "ok, test");
+    sprintf(buf, s);
     //for (;;);
     struct limine_terminal *terminal = terminal_request.response->terminals[0];
     terminal_request.response->write(terminal, (const char *) buf, strlen(buf));
