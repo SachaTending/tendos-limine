@@ -10,7 +10,7 @@ void setGdt2(gp);
 
 extern gdt_flush();
 
-struct gdt_entry gdt[3];
+struct gdt_entry gdt[6];
 
 struct gdt_ptr gp;
 
@@ -62,17 +62,26 @@ test2(void)
     /* Our NULL descriptor */
     gdt_set_gate(0, 0, 0, 0, 0);
 
+    gdt_set_gate(1, 0, 0x00009a000000ffff, 0x9A, 0xCF);
+    gdt_set_gate(2, 0, 0x000093000000ffff, 0x92, 0xCF);
+    
+    gdt_set_gate(3, 0, 0x00cf9a000000ffff, 0x9A, 0xCF);
+    gdt_set_gate(4, 0, 0x00cf93000000ffff, 0x92, 0xCF);
+
+    gdt_set_gate(4, 0, 0x00af9b000000ffff, 0x9A, 0xCF);
+    gdt_set_gate(5, 0, 0x00af93000000ffff, 0x92, 0xCF);
+    
     /* The second entry is our Code Segment. The base address
     *  is 0, the limit is 4GBytes, it uses 4KByte granularity,
     *  uses 32-bit opcodes, and is a Code Segment descriptor.
     *  Please check the table above in the tutorial in order
     *  to see exactly what each value means */
-    gdt_set_gate(1, 0, 0xFFFFFFFF, 0x9A, 0xCF);
+    //gdt_set_gate(1, 0, 0xFFFFFFFF, 0x9A, 0xCF);
 
     /* The third entry is our Data Segment. It's EXACTLY the
     *  same as our code segment, but the descriptor type in
     *  this entry's access byte says it's a Data Segment */
-    gdt_set_gate(2, 0, 0xFFFFFFFF, 0x92, 0xCF);
+    //gdt_set_gate(2, 0, 0xFFFFFFFF, 0x92, 0xCF);
     gdt_flush();
     //create_descriptor(0, 0x000FFFFF, (GDT_CODE_PL0));
     //create_descriptor(0, 0x000FFFFF, (GDT_DATA_PL0));
