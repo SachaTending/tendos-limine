@@ -164,7 +164,11 @@ void test(const char * s, ...)
 }
 
 void printf(const char * s, ...) {
-    test(s);
+    char *buf[strlen(s)];
+    sprintf(buf, s);
+    //for (;;);
+    struct limine_terminal *terminal = terminal_request.response->terminals[0];
+    terminal_request.response->write(terminal, (const char *) buf, strlen(buf));
     //print_char("a");
     //for (;;);
     //va_start(ap, s);
