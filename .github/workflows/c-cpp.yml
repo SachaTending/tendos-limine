@@ -17,6 +17,8 @@ jobs:
       run: sudo apt install xorriso
     - name: make
       run: make iso
+    - name: Set up NASM
+      uses: ilammy/setup-nasm@v1.4.0
     - name: Upload Kernel
       uses: actions/upload-artifact@v3.1.1
       with:
