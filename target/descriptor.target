@@ -1,0 +1,3 @@
+PREFIX = descriptor/
+
+FILES += $(PREFIX)gdt.o $(PREFIX)gdt2.o

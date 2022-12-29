@@ -22,6 +22,7 @@ static void done(void) {
 // The following will be our kernel's entry point.
 void _start(void) {
     extern kernel_start;
+    extern end;
     //if (terminal_request.response == NULL
     // || terminal_request.response->terminal_count < 1) {
     //    done();
@@ -34,7 +35,11 @@ void _start(void) {
     // We should now be able to call the Limine terminal to print out
     // a simple "Hello World" to screen.
     printf("Yes, this is limine tendos, what do you except?\n");
-    printf("Kernel location: 0x%h", kernel_start);
+    printf("Kernel location: 0x%x\n", kernel_start);
+    printf("Kernel end: 0x%x\n", end);
+    printf("Testing GDT...\n");
+    test2();
+    printf("Done!");
     // We're done, just hang...
     done();
 }
