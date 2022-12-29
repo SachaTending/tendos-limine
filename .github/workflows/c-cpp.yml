@@ -15,10 +15,10 @@ jobs:
     - uses: actions/checkout@v3
     - name: Setup
       run: sudo apt install xorriso
-    - name: make
-      run: make iso
     - name: Set up NASM
       uses: ilammy/setup-nasm@v1.4.0
+    - name: make
+      run: make iso
     - name: Upload Kernel
       uses: actions/upload-artifact@v3.1.1
       with:
