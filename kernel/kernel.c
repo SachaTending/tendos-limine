@@ -34,6 +34,7 @@ void _start(void) {
     //limine_interface_setterm(terminal_request.response);
     // We should now be able to call the Limine terminal to print out
     // a simple "Hello World" to screen.
+    __asm__ volatile ("cli");
     printf("Yes, this is limine tendos, what do you except?\n");
     printf("Kernel location: 0x%x\n", kernel_start);
     printf("Kernel end: 0x%x\n", end);

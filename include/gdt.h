@@ -62,4 +62,14 @@ struct gdt_ptr
                      SEG_LONG(0)     | SEG_SIZE(1) | SEG_GRAN(1) | \
                      SEG_PRIV(3)     | SEG_DATA_RDWR
 
+
+struct gdt_desc {
+    uint16_t limit;
+    uint16_t base_low;
+    uint8_t  base_mid;
+    uint8_t  access;
+    uint8_t  granularity;
+    uint8_t  base_hi;
+} __attribute__((packed));
+
 #endif

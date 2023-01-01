@@ -10,7 +10,65 @@ void setGdt2(gp);
 
 extern gdt_flush();
 
-struct gdt_entry gdt[6];
+// struct gdt_desc gdt[32];
+
+static struct gdt_desc gdt[] = {
+    {0},
+
+    {
+        .limit       = 0xffff,
+        .base_low    = 0x0000,
+        .base_mid    = 0x00,
+        .access      = 0b10011010,
+        .granularity = 0b00000000,
+        .base_hi     = 0x00
+    },
+
+    {
+        .limit       = 0xffff,
+        .base_low    = 0x0000,
+        .base_mid    = 0x00,
+        .access      = 0b10010010,
+        .granularity = 0b00000000,
+        .base_hi     = 0x00
+    },
+
+    {
+        .limit       = 0xffff,
+        .base_low    = 0x0000,
+        .base_mid    = 0x00,
+        .access      = 0b10011010,
+        .granularity = 0b11001111,
+        .base_hi     = 0x00
+    },
+
+    {
+        .limit       = 0xffff,
+        .base_low    = 0x0000,
+        .base_mid    = 0x00,
+        .access      = 0b10010010,
+        .granularity = 0b11001111,
+        .base_hi     = 0x00
+    },
+
+    {
+        .limit       = 0x0000,
+        .base_low    = 0x0000,
+        .base_mid    = 0x00,
+        .access      = 0b10011010,
+        .granularity = 0b00100000,
+        .base_hi     = 0x00
+    },
+
+    {
+        .limit       = 0x0000,
+        .base_low    = 0x0000,
+        .base_mid    = 0x00,
+        .access      = 0b10010010,
+        .granularity = 0b00000000,
+        .base_hi     = 0x00
+    }
+};
 
 struct gdt_ptr gp;
 
@@ -18,16 +76,13 @@ void gdt_set_gate(int num, unsigned long base, unsigned long limit, unsigned cha
 {
     /* Setup the descriptor base address */
     gdt[num].base_low = (base & 0xFFFF);
-    gdt[num].base_middle = (base >> 16) & 0xFF;
-    gdt[num].base_high = (base >> 24) & 0xFF;
-
-    /* Setup the descriptor limits */
-    gdt[num].limit_low = (limit & 0xFFFF);
+    gdt[num].base_mid = (base >> 16) & 0xFF;
     gdt[num].granularity = ((limit >> 16) & 0x0F);
 
     /* Finally, set up the granularity and access flags */
     gdt[num].granularity |= (gran & 0xF0);
     gdt[num].access = access;
+    gdt[num].base_hi = 0x00;
 }
 
 void
@@ -60,16 +115,16 @@ test2(void)
 
 
     /* Our NULL descriptor */
-    gdt_set_gate(0, 0, 0, 0, 0);
+    //gdt_set_gate(0, 0, 0, 0, 0);
 
-    gdt_set_gate(1, 0, 0x00009a000000ffff, 0x9A, 0xCF);
-    gdt_set_gate(2, 0, 0x000093000000ffff, 0x92, 0xCF);
-    
-    gdt_set_gate(3, 0, 0x00cf9a000000ffff, 0x9A, 0xCF);
-    gdt_set_gate(4, 0, 0x00cf93000000ffff, 0x92, 0xCF);
+    //gdt_set_gate(1, 0, 0x00009a000000ffff, 0x9A, 0xCF);
+    //gdt_set_gate(2, 0, 0x000093000000ffff, 0x92, 0xCF);
 
-    gdt_set_gate(4, 0, 0x00af9b000000ffff, 0x9A, 0xCF);
-    gdt_set_gate(5, 0, 0x00af93000000ffff, 0x92, 0xCF);
+    //gdt_set_gate(3, 0, 0x00cf9a000000ffff, 0x9A, 0xCF);
+    //gdt_set_gate(4, 0, 0x00cf93000000ffff, 0x92, 0xCF);
+
+    //gdt_set_gate(4, 0, 0x00af9b000000ffff, 0x9A, 0xCF);
+    //gdt_set_gate(5, 0, 0x00af93000000ffff, 0x92, 0xCF);
     
     /* The second entry is our Code Segment. The base address
     *  is 0, the limit is 4GBytes, it uses 4KByte granularity,
